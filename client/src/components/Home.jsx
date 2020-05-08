@@ -110,7 +110,7 @@ class Home extends Component {
       trparentId: this.state.trParentSecId,
     };
     const url =
-      process.env.REACT_APP_SERVER_URL_DOMAIN +
+      //   process.env.REACT_APP_SERVER_URL_DOMAIN + // process.env.REACT_APP_SERVER_URL_DOMAIN was supposed to be 'http://localhost:4000'
       process.env.REACT_APP_SERVER_ADD_TR_SEC_FROM_JIRA_ISSUE_API_ENDPOINT;
     axios.post(url, body).then((res) => {
       console.log(res.data);
