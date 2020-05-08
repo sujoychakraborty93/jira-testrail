@@ -109,18 +109,16 @@ class Home extends Component {
       trprojectId: this.state.trPrjId,
       trparentId: this.state.trParentSecId,
     };
-    axios
-      .post(
-        "http://localhost:4000/api/post/testrail/create/allsections/fromjiraissues",
-        body
-      )
-      .then((res) => {
-        console.log(res.data);
-        this.setState({
-          msg: "got message",
-          message: res.data,
-        });
+    const url =
+      process.env.REACT_APP_SERVER_URL_DOMAIN +
+      process.env.REACT_APP_SERVER_ADD_TR_SEC_FROM_JIRA_ISSUE_API_ENDPOINT;
+    axios.post(url, body).then((res) => {
+      console.log(res.data);
+      this.setState({
+        msg: "got message",
+        message: res.data,
       });
+    });
   };
 
   render() {
