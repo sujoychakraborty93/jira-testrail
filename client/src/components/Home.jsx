@@ -51,7 +51,7 @@ class Home extends Component {
             />
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Enter Text</Form.Label>
+            <Form.Label>Testrail Parent Section</Form.Label>
             <Form.Control
               //   as="textarea"
               type="text"
