@@ -17,6 +17,6 @@
     "express": "^4.17.1",
     "http-proxy-agent": "^4.0.1",
     "nginx": "0.0.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.7"
   }
 }
